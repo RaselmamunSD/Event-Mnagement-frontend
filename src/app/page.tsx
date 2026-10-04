@@ -252,12 +252,18 @@ export default function HomePage() {
                 </div>
 
                 <div className="space-y-4 pt-6">
-                  <div className="p-4 rounded-2xl bg-gradient-to-tr from-emerald-600 to-teal-600 text-white shadow-lg text-center">
-                    <p className="text-2xl font-black">25,000+</p>
-                    <p className="text-[11px] font-medium text-emerald-100">Engaged Youth Leaders</p>
+                  <div className="p-5 rounded-3xl bg-white dark:bg-slate-900 border border-emerald-500/20 shadow-xl flex flex-col items-center text-center justify-center space-y-2.5">
+                    <div className="w-20 h-20 sm:w-24 sm:h-24 bg-white rounded-2xl p-1.5 shadow-md border border-slate-100 dark:border-slate-800 flex items-center justify-center">
+                      <img src="/logo.png" alt="Shahjahanpur Railway Open Scout Group Emblem" className="w-full h-full object-contain filter drop-shadow-sm" />
+                    </div>
+                    <div>
+                      <span className="text-[10px] font-bold text-emerald-600 dark:text-emerald-400 uppercase tracking-wider block">Official Group Emblem</span>
+                      <h4 className="text-xs sm:text-sm font-black text-slate-900 dark:text-white leading-tight">শাহজাহানপুর রেলওয়ে ওপেন স্কাউট গ্রুপ</h4>
+                      <p className="text-[10px] text-slate-500 dark:text-slate-400 mt-0.5">বাংলাদেশ স্কাউটস, ঢাকা রেলওয়ে জেলা</p>
+                    </div>
                   </div>
                   <img
-                    className="w-full h-64 sm:h-72 object-cover rounded-3xl shadow-xl ring-1 ring-emerald-500/20 hover:scale-[1.02] transition-transform duration-500"
+                    className="w-full h-56 sm:h-60 object-cover rounded-3xl shadow-xl ring-1 ring-emerald-500/20 hover:scale-[1.02] transition-transform duration-500"
                     src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=800&auto=format&fit=crop&q=80"
                     alt="Leadership Team"
                   />

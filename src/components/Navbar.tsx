@@ -182,6 +182,21 @@ export default function Navbar() {
       {/* Mobile Menu Drawer */}
       {mobileMenuOpen && (
         <div className="md:hidden border-t border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 px-4 pt-3 pb-6 space-y-2 animate-in slide-in-from-top-2 shadow-lg">
+          {/* Mobile Brand Identity */}
+          <div className="flex items-center gap-3 p-2 mb-2 bg-emerald-500/5 dark:bg-emerald-950/30 rounded-2xl border border-emerald-500/10">
+            <div className="w-12 h-12 bg-white rounded-xl p-0.5 flex items-center justify-center shrink-0 shadow-xs">
+              <img src="/logo.png" alt="Logo" className="w-full h-full object-contain" />
+            </div>
+            <div>
+              <span className="text-xs font-bold text-slate-900 dark:text-white block leading-tight">
+                {t('brand_title')}
+              </span>
+              <span className="text-[10px] font-semibold text-emerald-600 dark:text-emerald-400 block">
+                {t('brand_sub')}
+              </span>
+            </div>
+          </div>
+
           {navLinks.map((link) => {
             const active = isActive(link.href);
             return (

@@ -8,6 +8,7 @@ import NoticeBar from '../components/NoticeBar';
 import Footer from '../components/Footer';
 
 export const metadata: Metadata = {
+  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || 'http://localhost:3000'),
   title: 'Shahjahanpur Railway Open Scout Group — বাংলাদেশ স্কাউটস, ঢাকা রেলওয়ে জেলা',
   description:
     'Official digital platform of Shahjahanpur Railway Open Scout Group, Bangladesh Scouts, Dhaka Railway District. সুন্দর জীবনের জন্য স্কাউটিং — Scouting for a Better Life.',
@@ -23,6 +24,11 @@ export const metadata: Metadata = {
     'Events & Camps',
   ],
   authors: [{ name: 'Shahjahanpur Railway Open Scout Group' }],
+  icons: {
+    icon: '/logo.png',
+    shortcut: '/logo.png',
+    apple: '/logo.png',
+  },
   openGraph: {
     title: 'Shahjahanpur Railway Open Scout Group — সুন্দর জীবনের জন্য স্কাউটিং',
     description:
@@ -30,6 +36,14 @@ export const metadata: Metadata = {
     type: 'website',
     locale: 'bn_BD',
     siteName: 'Shahjahanpur Railway Open Scout Group',
+    images: [
+      {
+        url: '/logo.jpg',
+        width: 1013,
+        height: 1024,
+        alt: 'Shahjahanpur Railway Open Scout Group Official Logo',
+      },
+    ],
   },
 };
 

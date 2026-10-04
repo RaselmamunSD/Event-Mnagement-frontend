@@ -75,10 +75,12 @@ export default function NoticeBar() {
   return (
     <div className="relative z-40 bg-gradient-to-r from-emerald-50 via-teal-50 to-emerald-100/80 dark:from-[#06241b] dark:via-[#092e23] dark:to-[#072d22] text-emerald-950 dark:text-emerald-100 border-b border-emerald-200/90 dark:border-emerald-800/60 shadow-xs overflow-hidden py-2 sm:py-2.5 transition-colors">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between gap-4">
-        {/* Fixed Left Badge */}
+        {/* Fixed Left Badge with Official Logo */}
         <div className="shrink-0 flex items-center gap-2">
-          <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-emerald-600 dark:bg-emerald-500 text-white dark:text-slate-950 text-[11px] sm:text-xs font-bold tracking-wider uppercase shadow-xs backdrop-blur-xs select-none border border-emerald-700/20 dark:border-emerald-400/40">
-            <AlertCircle className="w-3.5 h-3.5 shrink-0" />
+          <div className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-emerald-600 dark:bg-emerald-500 text-white dark:text-slate-950 text-[11px] sm:text-xs font-bold tracking-wider uppercase shadow-xs backdrop-blur-xs select-none border border-emerald-700/20 dark:border-emerald-400/40">
+            <div className="w-4 h-4 rounded-full bg-white p-0.5 shrink-0 flex items-center justify-center">
+              <img src="/logo.png" alt="Scout Emblem" className="w-full h-full object-contain" />
+            </div>
             <span>{badgeText}</span>
           </div>
         </div>

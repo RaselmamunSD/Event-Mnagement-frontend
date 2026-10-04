@@ -160,6 +160,13 @@ export default function AdmissionPage() {
     <div className="py-12 sm:py-16 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-16">
       {/* Header */}
       <div className="text-center max-w-3xl mx-auto space-y-4">
+        <div className="w-20 h-20 sm:w-24 sm:h-24 bg-white rounded-3xl p-1.5 shadow-lg border border-emerald-500/20 flex items-center justify-center mx-auto mb-3">
+          <img
+            src="/logo.png"
+            alt="Shahjahanpur Railway Open Scout Group Logo"
+            className="w-full h-full object-contain filter drop-shadow-sm"
+          />
+        </div>
         <h1 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-slate-900 dark:text-white tracking-tight">
           {t('admission_title')}
         </h1>
@@ -255,8 +262,12 @@ export default function AdmissionPage() {
 
           {submittedApp ? (
             <div className="text-center py-8 space-y-6">
-              <div className="w-20 h-20 bg-emerald-100 dark:bg-emerald-950/60 rounded-full flex items-center justify-center mx-auto text-emerald-600 dark:text-emerald-400">
-                <CheckCircle2 className="w-12 h-12" />
+              <div className="w-20 h-20 bg-white rounded-3xl p-1.5 shadow-lg border border-emerald-500/20 flex items-center justify-center mx-auto">
+                <img
+                  src="/logo.png"
+                  alt="Shahjahanpur Railway Open Scout Group Logo"
+                  className="w-full h-full object-contain filter drop-shadow-sm"
+                />
               </div>
 
               <div>

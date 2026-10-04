@@ -102,15 +102,24 @@ export default function DashboardPage() {
           </div>
         </div>
 
-        {isAdmin && (
-          <Link
-            href="/admin"
-            className="px-5 py-2.5 rounded-xl bg-amber-500 hover:bg-amber-600 text-slate-950 font-bold text-xs flex items-center gap-1.5 shadow-md shadow-amber-500/20 transition"
-          >
-            <Shield className="w-4 h-4" />
-            <span>Open Admin Dashboard</span>
-          </Link>
-        )}
+        <div className="flex items-center gap-3">
+          <div className="hidden md:flex items-center gap-2.5 px-3.5 py-1.5 rounded-2xl bg-emerald-500/10 dark:bg-emerald-950/60 border border-emerald-500/20">
+            <div className="w-8 h-8 bg-white rounded-lg p-0.5 flex items-center justify-center shrink-0 shadow-xs">
+              <img src="/logo.png" alt="Logo" className="w-full h-full object-contain" />
+            </div>
+            <span className="text-xs font-bold text-emerald-800 dark:text-emerald-300">Shahjahanpur Railway Open Scout Group</span>
+          </div>
+
+          {isAdmin && (
+            <Link
+              href="/admin"
+              className="px-5 py-2.5 rounded-xl bg-amber-500 hover:bg-amber-600 text-slate-950 font-bold text-xs flex items-center gap-1.5 shadow-md shadow-amber-500/20 transition"
+            >
+              <Shield className="w-4 h-4" />
+              <span>Open Admin Dashboard</span>
+            </Link>
+          )}
+        </div>
       </div>
 
       {/* Grid: 2 Columns (My Event Passes + My Admission Applications) */}

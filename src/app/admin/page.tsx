@@ -144,17 +144,22 @@ export default function AdminDashboardPage() {
     <div className="py-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-8">
       {/* Top Header */}
       <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 pb-6 border-b border-slate-200/80 dark:border-slate-800">
-        <div className="space-y-1">
-          <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-amber-500/10 border border-amber-500/20 text-amber-600 dark:text-amber-400 text-xs font-semibold">
-            <Shield className="w-3.5 h-3.5" />
-            <span>Administrative Command</span>
+        <div className="flex items-center gap-4">
+          <div className="w-14 h-14 sm:w-16 sm:h-16 bg-white rounded-2xl p-1 shadow-md border border-slate-200 dark:border-slate-800 flex items-center justify-center shrink-0">
+            <img src="/logo.png" alt="Shahjahanpur Railway Open Scout Group Logo" className="w-full h-full object-contain" />
           </div>
-          <h1 className="text-2xl sm:text-3xl font-extrabold text-slate-900 dark:text-white">
-            Admin Dashboard
-          </h1>
-          <p className="text-xs text-slate-500">
-            Logged in as {user.name} ({user.email})
-          </p>
+          <div className="space-y-1">
+            <div className="inline-flex items-center gap-1.5 px-3 py-0.5 rounded-full bg-amber-500/10 border border-amber-500/20 text-amber-600 dark:text-amber-400 text-xs font-semibold">
+              <Shield className="w-3.5 h-3.5" />
+              <span>Administrative Command</span>
+            </div>
+            <h1 className="text-2xl sm:text-3xl font-extrabold text-slate-900 dark:text-white">
+              Admin Dashboard
+            </h1>
+            <p className="text-xs text-slate-500">
+              Logged in as {user.name} ({user.email})
+            </p>
+          </div>
         </div>
 
         <div className="flex items-center gap-3">

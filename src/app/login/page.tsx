@@ -44,8 +44,12 @@ export default function LoginPage() {
         {/* Top accent ray */}
         <div className="absolute top-0 inset-x-0 h-1 bg-gradient-to-r from-emerald-500 via-teal-400 to-emerald-600" />
         <div className="text-center space-y-2">
-          <div className="w-12 h-12 rounded-2xl bg-emerald-500/10 text-emerald-600 dark:text-emerald-400 flex items-center justify-center mx-auto mb-3">
-            <Lock className="w-6 h-6" />
+          <div className="w-20 h-20 sm:w-24 sm:h-24 bg-white rounded-3xl p-1.5 shadow-lg border border-emerald-500/20 flex items-center justify-center mx-auto mb-3">
+            <img
+              src="/logo.png"
+              alt="Shahjahanpur Railway Open Scout Group Logo"
+              className="w-full h-full object-contain filter drop-shadow-sm"
+            />
           </div>
           <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 dark:text-white tracking-tight">
             {t('login_title')}

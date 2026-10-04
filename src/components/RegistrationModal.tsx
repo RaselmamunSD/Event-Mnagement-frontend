@@ -85,13 +85,18 @@ export default function RegistrationModal({
       <div className="relative w-full max-w-lg bg-white dark:bg-slate-900 rounded-3xl shadow-2xl border border-slate-200 dark:border-slate-800 overflow-hidden max-h-[90vh] flex flex-col">
         {/* Header */}
         <div className="flex items-center justify-between p-6 border-b border-slate-100 dark:border-slate-800/80 bg-slate-50/50 dark:bg-slate-800/40">
-          <div>
-            <span className="text-xs font-semibold text-emerald-600 dark:text-emerald-400 uppercase tracking-wider">
-              {event.category.toUpperCase()}
-            </span>
-            <h2 className="text-lg font-bold text-slate-900 dark:text-white truncate max-w-[340px]">
-              {confirmedRegistration ? t('reg_success_title') : event.title}
-            </h2>
+          <div className="flex items-center gap-3">
+            <div className="w-10 h-10 bg-white rounded-xl p-0.5 shadow-xs flex items-center justify-center shrink-0">
+              <img src="/logo.png" alt="Logo" className="w-full h-full object-contain" />
+            </div>
+            <div>
+              <span className="text-xs font-semibold text-emerald-600 dark:text-emerald-400 uppercase tracking-wider block">
+                {event.category.toUpperCase()}
+              </span>
+              <h2 className="text-lg font-bold text-slate-900 dark:text-white truncate max-w-[300px]">
+                {confirmedRegistration ? t('reg_success_title') : event.title}
+              </h2>
+            </div>
           </div>
           <button
             type="button"
@@ -106,8 +111,12 @@ export default function RegistrationModal({
         <div className="p-6 overflow-y-auto">
           {confirmedRegistration ? (
             <div className="text-center py-4 space-y-5">
-              <div className="w-16 h-16 bg-emerald-100 dark:bg-emerald-950/60 rounded-full flex items-center justify-center mx-auto text-emerald-600 dark:text-emerald-400">
-                <CheckCircle className="w-10 h-10" />
+              <div className="w-20 h-20 bg-white rounded-3xl p-1.5 shadow-lg border border-emerald-500/20 flex items-center justify-center mx-auto">
+                <img
+                  src="/logo.png"
+                  alt="Shahjahanpur Railway Open Scout Group Logo"
+                  className="w-full h-full object-contain filter drop-shadow-sm"
+                />
               </div>
 
               <div>

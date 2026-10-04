@@ -105,7 +105,10 @@ export default function EventDetailPage() {
         />
         <div className="absolute inset-0 bg-gradient-to-t from-slate-950/90 via-slate-950/40 to-transparent"></div>
 
-        <div className="absolute top-6 left-6 flex items-center gap-2">
+        <div className="absolute top-6 left-6 flex items-center gap-2.5">
+          <div className="w-9 h-9 bg-white rounded-xl p-0.5 shadow-md flex items-center justify-center shrink-0">
+            <img src="/logo.png" alt="Logo" className="w-full h-full object-contain" />
+          </div>
           <span className="px-3 py-1 rounded-full text-xs font-bold bg-emerald-500 text-white shadow-md uppercase tracking-wider">
             {event.category}
           </span>
@@ -350,6 +353,18 @@ export default function EventDetailPage() {
             <div className="pt-2 text-center text-[11px] text-slate-500 dark:text-slate-400 flex items-center justify-center gap-1.5 font-medium">
               <CheckCircle className="w-3.5 h-3.5 text-emerald-500 shrink-0" />
               <span>Instant digital ticket generation with QR identification</span>
+            </div>
+
+            {/* Official Organizer Chip */}
+            <div className="pt-4 border-t border-slate-100 dark:border-slate-800 flex items-center gap-3">
+              <div className="w-11 h-11 bg-white rounded-xl p-0.5 shadow-xs border border-emerald-500/20 flex items-center justify-center shrink-0">
+                <img src="/logo.png" alt="Shahjahanpur Railway Open Scout Group Logo" className="w-full h-full object-contain" />
+              </div>
+              <div className="text-left">
+                <span className="text-[10px] font-bold text-emerald-600 dark:text-emerald-400 uppercase tracking-wider block">Official Organizer</span>
+                <span className="text-xs font-bold text-slate-900 dark:text-white block leading-tight">Shahjahanpur Railway Open Scout Group</span>
+                <span className="text-[10px] text-slate-500">Dhaka Railway District • Bangladesh Scouts</span>
+              </div>
             </div>
           </div>
         </div>
